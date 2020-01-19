@@ -52,7 +52,7 @@ body {
 	position: absolute;
 	display: none;
 }
-.menu > li > a:hover {
+.menu > li:hover > a {
 	background-color: #2c71b8;
 	color: white;
 }
@@ -114,4 +114,22 @@ input[type="button"] {
 	background-image: url(images/cart.png);
 	background-repeat: no-repeat;
 	background-color: #fff;
+	background-position: center;
+	width: 40px;
+	height: 40px;
+	margin-left: 252px;
+	position: relative;
+}
+.products-count {
+	width: 20px;
+	height: 20px;
+	color: white;
+	text-align: center;
+	line-height: 20px;
+	background-color: #2c71b8;
+	border: 1px solid #2c71b8;
+	border-radius: 50px;
+	position: absolute;
+	top: -12px;
+    left: -12px;
 }
