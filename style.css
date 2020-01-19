@@ -27,6 +27,9 @@ body {
 .coll-md-3 {
 	width: 25%;
 }
+.coll-md-4 {
+	width: 30%;
+}
 .coll-md-6 {
 	width: 50%;
 }
@@ -142,8 +145,12 @@ input[type="button"] {
 .slide {
 	height: 400px;
 }
+.options {
+	height: 100%;
+}
 .nav > li {
 	float: left;
+	width: 25%;
 }
 .nav > li > a {
 	text-decoration: none;
@@ -163,6 +170,7 @@ input[type="button"] {
 	width: 100%;
 	border: 1px solid white;
 	position: relative;
+	margin-left: 30px;
 }
 .main-menu > li > a {
 	text-decoration: none;
