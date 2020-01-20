@@ -28,10 +28,13 @@ body {
 	width: 25%;
 }
 .coll-md-4 {
-	width: 30%;
+	width: 33%;
 }
 .coll-md-6 {
 	width: 50%;
+}
+.coll-md-8 {
+	width: 66%;
 }
 .coll-md-9 {
 	width: 75%;
@@ -145,18 +148,19 @@ input[type="button"] {
 .slide {
 	height: 400px;
 }
-.options {
-	height: 100%;
-}
 .nav > li {
 	float: left;
-	width: 25%;
 }
 .nav > li > a {
 	text-decoration: none;
 	text-align: center;
-	color: white;
+	color: #96b8dc;
 	font-weight: 300;
+	margin: 0 10px 0 0;
+    font-size: 15px;
+}
+.nav > li:last-child {
+	text-decoration: underline;
 }
 .h1 {
 	color: white;
@@ -166,44 +170,21 @@ input[type="button"] {
     margin-bottom: 10px;
     width: 104%;
 }
-.main-menu > li {
-	width: 100%;
+.select {
+	width: 270px;
+    height: 40px;
 	border: 1px solid white;
-	position: relative;
-	margin-left: 30px;
-}
-.main-menu > li > a {
-	text-decoration: none;
-	display: block;
-	height: 20px;
-	text-align: left;
-	line-height: 20px;
 	color: white;
-	background-color: #2c71b8;
 	font-weight: 300;
-	background-image: url(images/errow-down.png);
-	background-repeat: no-repeat;
-	background-position: 200px;
-}
-.sub-menu {
-	position: absolute;
-	display: none;
-}
-.main-menu > li:hover .sub-menu {
-	display: block;
-}
-.sub-menu > li > a {
-	text-decoration: none;
-	display: block;
-	height: 20px;
-	line-height: 20px;
-	color: white;
 	background-color: #2c71b8;
-	font-weight: 300;
+	margin-top: 15px;
+	padding-left: 20px;
 }
-.sub-menu > li > a:hover {
-	background-color: white;
-	color: #2c71b8;
+.select:focus {
+	outline: none; 
+}
+.select > option {
+	 height: 40px;
 }
 .tv {
 	border: 1px solid white;
@@ -243,7 +224,7 @@ input[type="button"] {
 p {
 	color: white;
 	font-weight: 300;
-	padding: 10px;
+	padding: 10px 37px;
 }
 .h2 {
 	font-weight: 700;
@@ -252,6 +233,7 @@ p {
 .h3 {
 	font-weight: 700;
 	font-size: 15px;
+	text-transform: uppercase;
 }
 .sup {
 	vertical-align: super;
@@ -260,7 +242,7 @@ p {
 .price {
 	font-weight: 700;
 	font-size: 50px;
-	margin: 10px 70px;
+	margin: 0px 20px;
 }
 .btn-primary, .btn-secondary {
 	display: block;
