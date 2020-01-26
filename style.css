@@ -16,7 +16,7 @@ body {
 .main {
 	background-color: rgba(255, 255, 255, 0.12);
 }
-.row {
+.row, .menu, .nav {
 	display: flex;
 }
 .coll-md-3 {
@@ -33,9 +33,6 @@ body {
 }
 .coll-md-9 {
 	width: 75%;
-}
-.menu {
-	display: flex;
 }
 .menu > li {
 	width: 25%;
@@ -148,9 +145,6 @@ input[type="button"] {
 }
 .slide {
 	height: 400px;
-}
-.nav {
-	display: flex;
 }
 .nav > li > a {
 	text-decoration: none;
