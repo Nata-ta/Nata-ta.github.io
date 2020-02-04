@@ -169,7 +169,7 @@ label:before {
 	height: 10px;
 	border: 1px solid white;
 	position: absolute;
-	top: 23px;
+	top: 12px;
 	left: 0;
 }
 input[type="checkbox"]:checked + label:before {
