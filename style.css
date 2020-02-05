@@ -70,6 +70,7 @@ body {
 }
 .menu > li:hover .submenu {
 	display: block;
+	z-index: 9999;
 }
 .submenu > li > a {
 	text-decoration: none;
@@ -143,9 +144,29 @@ input[type="button"] {
 	top: -9px;
     left: -9px;
 }
-.slide {
-	height: 400px;
-	border-bottom: 1px solid white;
+.slick div {
+	margin: 0 auto;
+	color: white;
+	font-size: 50px;
+	padding: 40px 0;
+	position: relative;
+}
+.slick div img {
+	margin: 0 auto;
+	width: 200px;
+	height: 200px;
+}
+.slick-dots li button::before {
+	width: 10px;
+    height: 10px;
+    border: 2px solid white;
+    content: '';
+}
+.slick-dots li.slick-active button:before {
+	background-color: white;
+}
+.slick-next:before {
+	background-image: url(images/arrow-point-to-right.png);
 }
 .device {
 	background-color: rgba(255, 255, 255, 0.25);
@@ -244,11 +265,11 @@ input[type="checkbox"] {
 	background-image: url(images/icon5.png);
 	top: 40px;
 }
-.square:hover, .heart:hover {
+.square:hover, .heart:hover, .heart.active {
 	background-color: #2c71b8;
 	background-image: url(images/icon6.png);
 }
-.heart:hover {
+.heart:hover, .heart.active {
 	background-image: url(images/icon7.png);
 }
 p {
